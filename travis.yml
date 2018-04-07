@@ -1,0 +1,4 @@
+# skip installation step
+install: true
+script:
+- cd tutorial/ ; ./gradlew test
