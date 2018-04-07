@@ -16,4 +16,4 @@ before_script:
 - cd tutorial
 
 script:
-- ./gradlew test
+- ./gradlew --no-daemon test
