@@ -12,8 +12,5 @@ cache:
     - $HOME/.gradle/caches/
     - $HOME/.gradle/wrapper/
 
-before_script: 
-- cd tutorial
-
 script:
-- ./gradlew --no-daemon test
+- ./tutorial/gradlew --no-daemon test
