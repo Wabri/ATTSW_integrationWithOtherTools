@@ -3,7 +3,9 @@ language: java
 jdk:
   - oraclejdk8
   - oraclejdk9
+  - openjdk7
 
+# cache settings
 before_cache:
   - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
   - rm -fr $HOME/.gradle/caches/*/plugin-resolution/
@@ -13,4 +15,4 @@ cache:
     - $HOME/.gradle/wrapper/
 
 script:
-- ./tutorial/gradlew --no-daemon test
+- ./tutorial/gradlew --no-daemon -b tutorial/build.gradle test
