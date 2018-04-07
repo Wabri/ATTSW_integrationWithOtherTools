@@ -4,10 +4,5 @@ jdk: oraclejdk8
 
 install: true
 
-cache:
-  directories:
-- $HOME/.gradle/caches
-
-
 script:
 - ./tutorial/gradlew -b tutorial/build.gradle  --no-daemon test
