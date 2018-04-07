@@ -13,7 +13,9 @@ cache:
     - $HOME/.gradle/caches/
     - $HOME/.gradle/wrapper/
 
-before_script: cd tutorial
+before_script: 
+- cd tutorial
+- ls gradle/wrapper/
 
 script:
 - ./gradlew clean
