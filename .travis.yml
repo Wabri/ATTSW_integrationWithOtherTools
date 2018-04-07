@@ -2,21 +2,18 @@ sudo: false
 
 language: java
 
-jdk: oraclejdk8
+jdk:
+  - oraclejdk8
+  - oraclejdk9
+  - openjdk7
 
-install: true
-
-matrix:
-  fast_finish: true
-  include:
-    # always build this environment
-    - os: linux
-      jdk: oraclejdk8
-      env: DISPLAY=:99.0 ADDITIONAL="-Pjacoco-report coveralls:report sonar:sonar"
-    # only on PR
-    - os: osx
-      # default: osx_image: xcode8
-if: type IN (pull_request)
+before_cache:
+  - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
+  - rm -fr $HOME/.gradle/caches/*/plugin-resolution/
+cache:
+  directories:
+    - $HOME/.gradle/caches/
+    - $HOME/.gradle/wrapper/
 
 script:
 - ./tutorial/gradlew -b tutorial/build.gradle --no-daemon clean
