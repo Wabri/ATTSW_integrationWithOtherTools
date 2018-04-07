@@ -1,7 +1,13 @@
 language: java
 
-# skip installation step
+jdk: oraclejdk8
+
+cache:
+  directories:
+- $HOME/.gradle/caches
+
 install: true
+
 script:
 - ./tutorial/gradlew -b tutorial/build.gradle  --no-daemon test
 
