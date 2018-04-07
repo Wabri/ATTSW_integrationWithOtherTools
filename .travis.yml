@@ -1,3 +1,5 @@
+language: java
+
 # skip installation step
 install: true
 script:
