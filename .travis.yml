@@ -1,4 +1,4 @@
 # skip installation step
 install: true
 script:
-- cd tutorial/ ; ./gradlew test
+- ./tutorial/gradlew -b tutorial/build.gradle test
