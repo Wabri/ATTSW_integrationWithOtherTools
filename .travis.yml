@@ -15,7 +15,6 @@ cache:
 
 before_script: 
 - cd tutorial
-- ls gradle/wrapper/
 
 script:
 - ./gradlew clean
