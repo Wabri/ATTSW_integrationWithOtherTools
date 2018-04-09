@@ -20,4 +20,8 @@ public class StudentController {
 				.collect(Collectors.joining());
 	}
 
+	public String getOneStudent(String idStudent) {
+		return studentService.oneStudent(idStudent).toString();
+	}
+
 }

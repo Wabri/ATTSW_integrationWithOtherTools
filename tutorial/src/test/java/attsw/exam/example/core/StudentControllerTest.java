@@ -40,6 +40,19 @@ public class StudentControllerTest {
 		verify(iStudentService, times(1)).getAllStudents();
 	}
 
+	@Test(expected = NullPointerException.class)
+	public void testGetOneStudentWhenThereAreNoStudents() {
+		assertNull(studentController.getOneStudent("id0"));
+	}
+
+	@Test
+	public void testGetStudent() {
+		Student student = new Student("id0");
+		when(iStudentService.oneStudent("id0")).thenReturn(student);
+		assertEquals(student.toString(), studentController.getOneStudent("id0"));
+		verify(iStudentService, times(1)).oneStudent("id0");
+	}
+
 	private String extractAllStudentsStringFromList(List<Student> list) {
 		return list.stream().map(student -> student.toString() + System.getProperty("line.separator"))
 				.collect(Collectors.joining());
