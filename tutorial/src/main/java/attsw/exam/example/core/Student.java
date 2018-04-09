@@ -2,4 +2,10 @@ package attsw.exam.example.core;
 
 public class Student {
 
+	private String id;
+
+	public Student(String id) {
+		this.id = id;
+	}
+
 }
