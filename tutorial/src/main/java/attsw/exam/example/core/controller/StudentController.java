@@ -1,11 +1,10 @@
 package attsw.exam.example.core.controller;
 
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 import attsw.exam.example.core.service.IStudentService;
 
-public class StudentController {
+public class StudentController implements IStudentController {
 
 	private IStudentService studentService;
 
