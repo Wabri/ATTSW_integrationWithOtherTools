@@ -8,4 +8,6 @@ public interface Repository {
 
 	public List<Student> findAll();
 
+	public Student findOne(String string);
+
 }

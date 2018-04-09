@@ -16,4 +16,8 @@ public class StudentService {
 		return repository.findAll();
 	}
 
+	public Student oneStudent(String idStudent) {
+		return repository.findOne(idStudent);
+	}
+
 }

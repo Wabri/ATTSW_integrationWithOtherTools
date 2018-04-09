@@ -36,6 +36,13 @@ public class StudentServiceTest {
 		studentsList.add(newStudentTest("id1"));
 		verifyNumberOfStudents(2);
 	}
+	
+	@Test
+	public void testOneStudentWhenStudentsIsEmpty() {
+		when(repository.findOne("id0")).thenReturn(null);
+		assertNull(studentService.oneStudent("id0"));
+		verify(repository,times(1)).findOne("id0");
+	}
 
 	private Student newStudentTest(String idStudent) {
 		return new Student(idStudent);
