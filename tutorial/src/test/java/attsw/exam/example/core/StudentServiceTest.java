@@ -58,8 +58,8 @@ public class StudentServiceTest {
 		return new Student(idStudent);
 	}
 
-	private void verifyNumberOfStudents(int numberOfStudents) {
-		assertEquals(numberOfStudents, studentService.getAllStudents().size());
+	private void verifyNumberOfStudents(int expected) {
+		assertEquals(expected, studentService.getAllStudents().size());
 		verify(repository, times(1)).findAll();
 	}
 

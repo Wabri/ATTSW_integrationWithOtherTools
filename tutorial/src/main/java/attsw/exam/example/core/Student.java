@@ -12,4 +12,8 @@ public class Student {
 		return this.id;
 	}
 
+	@Override
+	public String toString() {
+		return "Student [id=" + id + "]";
+	}
 }
