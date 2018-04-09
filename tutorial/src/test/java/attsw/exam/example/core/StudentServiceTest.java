@@ -10,6 +10,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import attsw.exam.example.core.repository.Repository;
+import attsw.exam.example.core.service.StudentService;
 
 public class StudentServiceTest {
 
