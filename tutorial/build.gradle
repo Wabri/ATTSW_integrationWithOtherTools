@@ -2,6 +2,8 @@ plugins {
     id 'java'
     id 'application'
     id 'eclipse'
+  	id "org.sonarqube" version "2.6.2"
+  	id 'jacoco'
 }
 
 mainClassName = 'App'
@@ -18,4 +20,11 @@ dependencies {
 task  wrapper(type: Wrapper) {
     gradleVersion = '4.6'
     distributionType = Wrapper.DistributionType.ALL
+}
+
+sonarqube {
+    properties {
+        property "sonar.projectName", "Java :: ATTSW_integrationWithOtherTools :: SonarQube Scanner for Gradle"
+        property "sonar.jacoco.reportPath", "${project.buildDir}/jacoco/"
+    }
 }
