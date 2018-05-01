@@ -1,14 +1,14 @@
 package attsw.exam.example.core;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
-import static org.mockito.Mockito.*;
 
 import java.util.List;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.mockito.ArgumentCaptor;
 
 import com.github.fakemongo.Fongo;
 import com.mongodb.BasicDBObject;
@@ -37,13 +37,13 @@ public class MongoRepositoryTest {
 	public void testGetAllStudentsEmpty() {
 		assertTrue(mongoRepository.findAll().isEmpty());
 	}
-	
+
 	@Test
 	public void testOneStudent() {
 		addStudentToStudentsCollection("id1");
-		assertEquals(1,  mongoRepository.findAll().size());
+		assertEquals(1, mongoRepository.findAll().size());
 	}
-	
+
 	@Test
 	public void testMoreThanOneStudentsInCollection() {
 		addStudentToStudentsCollection("id1");
@@ -52,6 +52,20 @@ public class MongoRepositoryTest {
 		assertEquals(2, listOfStudents.size());
 		assertEquals("id1", listOfStudents.get(0).getId());
 		assertEquals("id2", listOfStudents.get(1).getId());
+	}
+
+	@Test
+	public void testStudentNotFound() {
+		assertNull(mongoRepository.findOne("id1"));
+	}
+
+	@Test
+	public void testStudentFound() {
+		addStudentToStudentsCollection("id1");
+		addStudentToStudentsCollection("id2");
+		Student student = mongoRepository.findOne("id2");
+		assertNotNull(student);
+		assertEquals("id2", student.getId());
 	}
 
 	private void addStudentToStudentsCollection(String idValue) {
