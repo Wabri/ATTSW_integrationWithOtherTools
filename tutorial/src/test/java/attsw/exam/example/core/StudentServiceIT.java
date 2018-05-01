@@ -4,6 +4,8 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
 
+import java.net.UnknownHostException;
+
 import org.junit.Before;
 import org.junit.Test;
 
@@ -23,8 +25,8 @@ public class StudentServiceIT {
 	private DBCollection students;
 
 	@Before
-	public void init() {
-		MongoClient mongoClient = new Fongo("Mongo Server").getMongo();
+	public void init() throws UnknownHostException {
+		MongoClient mongoClient = new MongoClient();
 		Repository mongoRepository = new MongoRepository(mongoClient);
 		studentService = new StudentService(mongoRepository);
 		DB db = mongoClient.getDB("School");
