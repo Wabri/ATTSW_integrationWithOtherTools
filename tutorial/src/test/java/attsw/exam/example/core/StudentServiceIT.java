@@ -49,6 +49,13 @@ public class StudentServiceIT {
 		Student student = studentService.oneStudent("id1");
 		assertNull(student);
 	}
+	
+	@Test
+	public void testGetStudent () {
+		addNewStudentToCollection("id0");
+		addNewStudentToCollection("id1");
+		assertEquals("id1", studentService.oneStudent("id1").getId());
+	}
 
 	private void addNewStudentToCollection(String id) {
 		BasicDBObject newElement = new BasicDBObject();
