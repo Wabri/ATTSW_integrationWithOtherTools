@@ -14,12 +14,10 @@ import attsw.exam.example.core.Student;
 import attsw.exam.example.core.repository.Repository;
 
 public class MongoRepository implements Repository {
-
-	private MongoClient mongoClient;
+	
 	DBCollection students;
 
 	public MongoRepository(MongoClient mongoClient) {
-		this.mongoClient = mongoClient;
 		students = mongoClient.getDB("School").getCollection("Students");
 	}
 

@@ -1,18 +1,168 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="src" output="bin/main" path="src/main/java">
+	<classpathentry output="bin/main" kind="src" path="src/main/java">
 		<attributes>
 			<attribute name="gradle_scope" value="main"/>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="src" output="bin/test" path="src/test/java">
+	<classpathentry output="bin/test" kind="src" path="src/test/java">
 		<attributes>
 			<attribute name="gradle_scope" value="test"/>
 			<attribute name="gradle_used_by_scope" value="test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8/"/>
 	<classpathentry kind="con" path="org.eclipse.buildship.core.gradleclasspathcontainer"/>
 	<classpathentry kind="output" path="bin/default"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8/"/>
+	<classpathentry sourcepath="/home/wabri/.gradle/caches/modules-2/files-2.1/org.mongodb/mongo-java-driver/2.14.3/50c9562a3d5a1b2c5b8c384c5cb78ea235ae07e/mongo-java-driver-2.14.3-sources.jar" kind="lib" path="/home/wabri/.gradle/caches/modules-2/files-2.1/org.mongodb/mongo-java-driver/2.14.3/5c78bfc3b20699508a36a08d9d8c7feb3a558296/mongo-java-driver-2.14.3.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/wabri/.gradle/caches/modules-2/files-2.1/org.jongo/jongo/1.3.0/fa66ddb54fb43568585d3bd8d58cf3da848d9363/jongo-1.3.0-sources.jar" kind="lib" path="/home/wabri/.gradle/caches/modules-2/files-2.1/org.jongo/jongo/1.3.0/291fe175a7c7255741d28dd539ae5798469e6d58/jongo-1.3.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/wabri/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.7.3/42e1a9bae2802bc0b53efa3d96ba7cfaf9dcd9fc/jackson-databind-2.7.3-sources.jar" kind="lib" path="/home/wabri/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.7.3/f12e6cd05cbaecd74d16e685d45b627732939e42/jackson-databind-2.7.3.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/wabri/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.7.3/40a980d44cc06f8facc1b184c13a1bbd04944ebe/jackson-core-2.7.3-sources.jar" kind="lib" path="/home/wabri/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.7.3/1499b854ae9f370409792db5af1b552dc7d9682f/jackson-core-2.7.3.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/wabri/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.7.3/cd958e497f0098ea536cbe8d53cfd02b8c56b135/jackson-annotations-2.7.3-sources.jar" kind="lib" path="/home/wabri/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.7.3/e250c11c1329c7b6b62442a9743befad78be553c/jackson-annotations-2.7.3.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/wabri/.gradle/caches/modules-2/files-2.1/de.undercouch/bson4jackson/2.7.0/8998a1ff0812dff94dc4ffd10f15e6b2fa23a1e7/bson4jackson-2.7.0-sources.jar" kind="lib" path="/home/wabri/.gradle/caches/modules-2/files-2.1/de.undercouch/bson4jackson/2.7.0/7864788c9fc02ae62538477d1ef3abb057e80640/bson4jackson-2.7.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/wabri/.gradle/caches/modules-2/files-2.1/org.testcontainers/database-commons/1.7.2/57d59507c55e4e7b73d9e18d97ce068429ceec01/database-commons-1.7.2-sources.jar" kind="lib" path="/home/wabri/.gradle/caches/modules-2/files-2.1/org.testcontainers/database-commons/1.7.2/a81140b788021108abed8251d7e252d6144eca8a/database-commons-1.7.2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/wabri/.gradle/caches/modules-2/files-2.1/org.testcontainers/testcontainers/1.7.2/98883bcadb99a874e3bd6c6a8e18d7342a965c56/testcontainers-1.7.2-sources.jar" kind="lib" path="/home/wabri/.gradle/caches/modules-2/files-2.1/org.testcontainers/testcontainers/1.7.2/fec8b360b6b613f6c9d3b8e7a9fa32d1a2bcb978/testcontainers-1.7.2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/wabri/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar" kind="lib" path="/home/wabri/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/2973d150c0dc1fefe998f834810d68f278ea58ec/junit-4.12.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/wabri/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-core/2.18.0/10b8d62b42546785675701f13a98f66fba76487d/mockito-core-2.18.0-sources.jar" kind="lib" path="/home/wabri/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-core/2.18.0/d3e839acfc4b862bbcfe9165c316f1567db24cb6/mockito-core-2.18.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/wabri/.gradle/caches/modules-2/files-2.1/com.github.fakemongo/fongo/1.6.5/2cc8d99e81410ff9d89f5fff067d70491e7d8ea6/fongo-1.6.5-sources.jar" kind="lib" path="/home/wabri/.gradle/caches/modules-2/files-2.1/com.github.fakemongo/fongo/1.6.5/e728270919aef816b2780e4ea2ba87289a1aed0f/fongo-1.6.5.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/wabri/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.1.1/28d79153709568f830b52d041aa8f8da82f87d25/logback-classic-1.1.1-sources.jar" kind="lib" path="/home/wabri/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.1.1/19e1e2be2670b33c5dcc835550527028dddddcd1/logback-classic-1.1.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/wabri/.gradle/caches/modules-2/files-2.1/de.grundid.opendatalab/geojson-jackson/1.2/e01d2aa86604c10035a0246227ee8c323d035d0f/geojson-jackson-1.2-sources.jar" kind="lib" path="/home/wabri/.gradle/caches/modules-2/files-2.1/de.grundid.opendatalab/geojson-jackson/1.2/a476d2adaf8e975d749a3009412dd470664cab07/geojson-jackson-1.2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/wabri/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/1dc37250fbc78e23a65a67fbbaf71d2e9cbc3c0b/hamcrest-core-1.3-sources.jar" kind="lib" path="/home/wabri/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/wabri/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy/1.8.3/483bc4b0d19e8294179047a5aebb4cd6f30367c2/byte-buddy-1.8.3-sources.jar" kind="lib" path="/home/wabri/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy/1.8.3/c7625191ad0f190bd719f0aef54ece5fdf0e4a77/byte-buddy-1.8.3.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/wabri/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.8.3/37bd6da6e9216f5a475bd735861ca6372e5254f6/byte-buddy-agent-1.8.3-sources.jar" kind="lib" path="/home/wabri/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.8.3/897127e8724cbf38f72b4c85fe8e39e7ae00d688/byte-buddy-agent-1.8.3.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/wabri/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-compress/1.15/a82a61e0bbce4e06281c675af7422553bf20ca8f/commons-compress-1.15-sources.jar" kind="lib" path="/home/wabri/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-compress/1.15/b686cd04abaef1ea7bc5e143c080563668eec17e/commons-compress-1.15.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/wabri/.gradle/caches/modules-2/files-2.1/org.objenesis/objenesis/2.6/96614f514a1031296657bf0dde452dc15e42fcb8/objenesis-2.6-sources.jar" kind="lib" path="/home/wabri/.gradle/caches/modules-2/files-2.1/org.objenesis/objenesis/2.6/639033469776fd37c08358c6b92a4761feb2af4b/objenesis-2.6.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/wabri/.gradle/caches/modules-2/files-2.1/rhino/js/1.7R2/88a99147faee9b49f40cb4f27d4628d688be9af3/js-1.7R2-sources.jar" kind="lib" path="/home/wabri/.gradle/caches/modules-2/files-2.1/rhino/js/1.7R2/b95d5212ff4cea92cee1c3c6fa50aa82c9d4905b/js-1.7R2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/wabri/.gradle/caches/modules-2/files-2.1/com.vividsolutions/jts/1.13/ee922fa0a39de08d193337739d336779e3dfa774/jts-1.13-sources.jar" kind="lib" path="/home/wabri/.gradle/caches/modules-2/files-2.1/com.vividsolutions/jts/1.13/3ccfb9b60f04d71add996a666ceb8902904fd805/jts-1.13.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/wabri/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-core/1.1.1/ea3eb9e2655c41f76ef44596659353d495ce3780/logback-core-1.1.1-sources.jar" kind="lib" path="/home/wabri/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-core/1.1.1/6d9866eb3f38b66530d7b1d41526228df3e9d963/logback-core-1.1.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/wabri/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-ext/1.7.25/da5cead7cf1463cabec6cd56a9b8936037711e0c/slf4j-ext-1.7.25-sources.jar" kind="lib" path="/home/wabri/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-ext/1.7.25/d1685f86e2becda32ad8bb823b8cc4990eb45f69/slf4j-ext-1.7.25.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/wabri/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.25/962153db4a9ea71b79d047dfd1b2a0d80d8f4739/slf4j-api-1.7.25-sources.jar" kind="lib" path="/home/wabri/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.25/da76ca59f6a57ee3102f8f9bd9cee742973efa8a/slf4j-api-1.7.25.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/wabri/.gradle/caches/modules-2/files-2.1/org.rnorth.duct-tape/duct-tape/1.0.7/f284c5ce9d3b7bd612dcdd754fb9d09b021dcb05/duct-tape-1.0.7-sources.jar" kind="lib" path="/home/wabri/.gradle/caches/modules-2/files-2.1/org.rnorth.duct-tape/duct-tape/1.0.7/a26b5d90d88c91321dc7a3734ea72d2fc019ebb6/duct-tape-1.0.7.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/wabri/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/15.0/e46282033fcc73c8b9eb55f297b264cee3680f29/annotations-15.0-sources.jar" kind="lib" path="/home/wabri/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/15.0/d40ab99147584cf6cfb5245be67b3fee2c7220f9/annotations-15.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/wabri/.gradle/caches/modules-2/files-2.1/javax.annotation/javax.annotation-api/1.3.1/498f0d91a7dc3cf79fb22f0bc07299da40cc7f7d/javax.annotation-api-1.3.1-sources.jar" kind="lib" path="/home/wabri/.gradle/caches/modules-2/files-2.1/javax.annotation/javax.annotation-api/1.3.1/20a2c0583598d68b0835474bbe07792d4f3b219f/javax.annotation-api-1.3.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/wabri/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.2/b19b5927c2c25b6c70f093767041e641ae0b1b35/jsr305-3.0.2-sources.jar" kind="lib" path="/home/wabri/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.2/25ea2e8b0c338a877313bd4672d3fe056ea78f0d/jsr305-3.0.2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/wabri/.gradle/caches/modules-2/files-2.1/javax.xml.bind/jaxb-api/2.3.0/431dc11c8e5d8b9f5149be5757ef8e170fc6824a/jaxb-api-2.3.0-sources.jar" kind="lib" path="/home/wabri/.gradle/caches/modules-2/files-2.1/javax.xml.bind/jaxb-api/2.3.0/99f802e0cb3e953ba3d6e698795c4aeb98d37c48/jaxb-api-2.3.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/wabri/.gradle/caches/modules-2/files-2.1/org.rnorth.visible-assertions/visible-assertions/2.1.0/225c6475c31a277ff501a1b68780ede21eb5a246/visible-assertions-2.1.0-sources.jar" kind="lib" path="/home/wabri/.gradle/caches/modules-2/files-2.1/org.rnorth.visible-assertions/visible-assertions/2.1.0/f2fcff2862860828ac38a5e1f14d941787c06b13/visible-assertions-2.1.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/wabri/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna/4.5.0/81072e8420f1635a3625cdfd253ccea6e33535cc/jna-4.5.0-sources.jar" kind="lib" path="/home/wabri/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna/4.5.0/55b548d3195efc5280bf1c3f17b49659c54dee40/jna-4.5.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="test"/>
+		</attributes>
+	</classpathentry>
 </classpath>
