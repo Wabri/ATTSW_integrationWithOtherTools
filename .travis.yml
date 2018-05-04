@@ -21,4 +21,4 @@ install:
   - docker pull mongo
 
 script:
-- ./tutorial/gradlew --no-daemon -b tutorial/build.gradle test
+- ./tutorial/gradlew --no-daemon -b tutorial/build.gradle test --fail-fast
