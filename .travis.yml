@@ -4,20 +4,15 @@ jdk:
   - oraclejdk8
   - oraclejdk9
 
-services:
- - docker
-
 # cache settings
 before_cache:
   - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
   - rm -fr $HOME/.gradle/caches/*/plugin-resolution/
+
 cache:
   directories:
     - $HOME/.gradle/caches/
     - $HOME/.gradle/wrapper/
-
-install:
- - docker pull mongo
 
 script:
 - ./tutorial/gradlew --no-daemon -b tutorial/build.gradle test
